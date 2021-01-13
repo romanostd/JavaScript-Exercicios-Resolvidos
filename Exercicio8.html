@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercicio 6</title>
+    </head>
+    <body>
+        <input onchange = "mostrarcpf()" placeholder="cpf" maxlength="11" id="cpf" />
+        <p id="cpfcomponto"></p>
+    </body>
+    <script type="text/javascript">
+        
+        //(8) Crie um campo texto parar preencher um CPF <input maxlength="11" id="cpf" />, e exiba ao lado com pontuação conforme preencher
+        function mostrarcpf(getcpf){
+        var getcpf = document.getElementById("cpf").value;    
+        //retira os caracteres indesejados...
+        getcpf = getcpf.replace(/[^\d]/g, "");
+        //realizar a formatação...
+        return getcpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+        alert(getcpf);
+        }
+    </script>
+</html>
