@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Exercicio 5</title>
+    </head>
+    <body>
+        <p>Escreva uma palavra e descubra quantas letras tem nela</p>
+        <input type="text" id="palavra" placeholder="palavra"></input>
+        <button id="mostrarnome" onclick="calcularString()">Exibir Quantidade</button>
+        <p id="quantidade"></p>
+    </body>
+    <script type="text/javascript">
+    function calcularString() {
+        //(5) exiba a quantidade de letras que possuem o texto inserido ao clicar no botão
+        var Palavra = document.getElementById('palavra').value;
+        var n = Palavra.length;
+        document.getElementById('quantidade').innerHTML = "A palavra " +Palavra +" tem " +n +" letras";
+    };
+    </script>
+</html>
