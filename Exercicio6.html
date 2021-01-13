@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercicio 6</title>
+    </head>
+    <body>
+        <img id="lampada" src="img/lampada_off.jpg">
+        <br>
+        <button onclick="ligarLampada()">Ligar</button>
+        <button onclick="desligarLampada()">Desligar</button>
+    </body>
+    <script type="text/javascript">
+        //(6) No seu HTML exiba a imagem de uma lampada, ao clicar em cima da lampada, troque o src dela para a lampada que está acessa.
+        function ligarLampada(){
+            document.getElementById('lampada').src = "img/lampada_on.jpg"; 
+        }
+
+        function desligarLampada(){
+            document.getElementById('lampada').src = "img/lampada_off.jpg"; 
+        }
+    </script>
+</html>
