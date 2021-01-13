@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Exercicio 1</title>
+    </head>
+    <body>
+        <input type="text" id="nome" placeholder="nome"></input>
+        <button id="mostrarnome" onclick="showName()">Mostrar nome</button>
+    </body>
+    <script type="text/javascript">
+        //(4) No HTML Crie:
+        //1 - Campo/Input do tipo text para preencher o nome completo.
+        //1 - Botão com o texto: 'Exibir Nome' e ao clicar neste botão é exibido um alert com o valor do campo nome completo, ex: ' O Nome Completo é: "xxxx". '
+        function showName() {
+        var nomeCompleto = document.getElementById('nome').value;
+        alert('O Nome Completo é: ' + nomeCompleto );	
+        };	
+    </script>
+</html>
