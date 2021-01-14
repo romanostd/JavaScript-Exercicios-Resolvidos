@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Exercicio 10</title>
+    </head>
+    <body>
+        <p>Digite os dois numeros a serem somados</p>
+        <input placeholder="Primeiro Numero" id="soma1"></input>
+        <input placeholder="Segundo Numero" id="soma2"></input>
+        <button onclick="somarNumeros()">Somar</button>
+        <p id="resultado"></p>
+    </body>
+    <script type="text/javascript">
+    /*(10) No HTML Crie:
+    2 x - Campo/Input do tipo text. (id=soma1, id=soma2)
+    1 x - Botão (id=btn-soma)
+    1 x - Campo (id=resultado-soma)
+    Caso esteja preenchido um valor númerico nos dois campos(id=soma1, id=soma2), 
+    O resultado da soma devera aparecer no campo (id=resultado-soma) ao clicar no botão (id=btn-soma).*/
+    function somarNumeros() {
+        var n1 = document.getElementById('soma1').value;
+        var n2 = document.getElementById('soma2').value;
+        document.getElementById('resultado').innerHTML = parseInt(n1) + parseInt(n2);
+    }
+    </script>
+</html>
