@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercicio 16</title>
+    </head>
+    <body>
+        <p>Digite os dois numeros a serem somados</p>
+        <input placeholder="Primeiro Numero" id="soma1"></input>
+        <input placeholder="Segundo Numero" id="soma2"></input>
+        <button onclick="somarNumeros(4,4)">Somar</button>
+        <p id="resultado"></p>
+    </body>
+    <script type="text/javascript">
+    //(16) Crie uma função que recebe 2 parâmetros e retorna a soma deles. (e utilize no exercicio 10)
+    function somarNumeros(n1 , n2) {
+        var n1 ;
+        var n2 ;
+        var soma = n1 + n2;
+        document.getElementById('resultado').innerHTML = parseInt(soma);
+    }
+    </script>
+</html>
