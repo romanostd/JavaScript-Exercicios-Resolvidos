@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- (17) Crie uma função que recebe 2 parâmetros e retorna a soma  
+deles,porem caso seja passado um parâmetro vazio ela retorne zero.-->
+</head>
+<body>
+<p>Setting a default value to a function parameter.</p>
+<p id="resultado"></p>
+
+<script>
+function myFunction(x, y) {
+  if (x === undefined || y === undefined ) {
+    return 0;
+  }  
+  return x + y;
+}
+document.getElementById("resultado").innerHTML = myFunction(4,4);
+</script>
+
+</body>
+</html>
