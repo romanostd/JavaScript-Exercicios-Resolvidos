@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Exercicio 12a</title>
+    </head>
+    <body>
+        <div id="resultado"></div>
+    </body>
+    <script type="text/javascript">
+    //(14) Crie uma div vazia cujo o id dela é 'resultado' Insira via JavaScript assim que a tela carregar o seguinte texto: 'Esse texto foi inserido pelo JavaScript...'
+    setInterval(function inserirTexto(){
+            document.getElementById('resultado').innerHTML = 'Esse texto foi inserido pelo JavaScript...';
+        },3000);
+        window.onload = inserirTexto();
+   </script>
+</html>
