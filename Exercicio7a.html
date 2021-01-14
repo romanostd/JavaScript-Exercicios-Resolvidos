@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Exercicio 6</title>
+    </head>
+    <body>
+        <img id="lampada" onmouseover="ligarLampada()" onmouseout="desligarLampada()" src="img/lampada_off.jpg">
+    </body>
+    <script type="text/javascript">
+        //Agora que você já sabe utilizar o evento 'click', aprenda a usar o 'mouseover', ao passar o mouse em cima da 'lampada.jpg' altere ela para 'lampada-on.jpg'.
+        function ligarLampada(){
+            document.getElementById('lampada').src = "img/lampada_on.jpg"; 
+        }
+
+        function desligarLampada(){
+            document.getElementById('lampada').src = "img/lampada_off.jpg"; 
+        }
+    </script>
+</html>
