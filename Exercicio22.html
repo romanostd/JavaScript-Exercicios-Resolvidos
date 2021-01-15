@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 22</title>
+<!-- Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade ou menor.
+-->
+</head>
+<body>
+<label>Ano de nascimento</label>
+<input id="nascimento"></input>
+<button onclick="gerarIdade()">Confirmar</button>
+<p id="resultado"></p>
+<script>
+function gerarIdade(){
+    var valor = document.getElementById('nascimento').value;
+    var d = new Date();
+    var y = d.getFullYear();
+    d = y - valor;
+    if(d >= 18)  {
+        document.getElementById("resultado").innerHTML = "Você possui "+d +" anos, é maior de idade";
+
+    }
+    else    {
+        document.getElementById("resultado").innerHTML ="Você possui "+d +" anos, é menor de idade";
+    }
+
+}
+</script>
+</body>
+</html>
