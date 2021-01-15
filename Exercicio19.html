@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 19</title>
+<!-- (19) Crie uma função que retorna a palavra (impar/par) de acordo com seu parâmetro inteiro.
+-->
+</head>
+<body>
+<p id="resultado"></p>
+<script>
+function parouImpar(x){
+    if(x % 2 === 0){
+        document.getElementById('resultado').innerHTML = "O numero passado por parametro é par";
+    }
+
+    else    {
+        document.getElementById('resultado').innerHTML = "O numero passado por parametro é impar";
+    }
+}
+
+parouImpar(4);
+</script>
+</body>
+</html>

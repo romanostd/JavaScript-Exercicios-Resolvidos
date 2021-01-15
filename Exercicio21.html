@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 21</title>
+<!-- (21) Crie uma função que recebe 2 parâmetros e retorna a multiplicação deles.
+-->
+</head>
+<body>
+<label>Valor</label>
+<input id="desconto"></input>
+<button onclick="gerarDesconto()">Gerar</button>
+<p id="resultado"></p>
+<script>
+function gerarDesconto(){
+    var valor = document.getElementById('desconto').value;
+    
+    document.getElementById("resultado").innerHTML = parseInt(valor)*0.05;
+}
+</script>
+</body>
+</html>
