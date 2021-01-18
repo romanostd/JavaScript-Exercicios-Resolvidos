@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 26</title>
+<!-- (26) Dentro da div com o id 'resultado', escreva 5x ('Repetição'). (agora com forEach) 
+-->
+</head>
+<body>
+    <div id="resultado"></div>
+<script>
+var fruits = ["Repetição", "Repetição", "Repetição", "Repetição", "Repetição"];
+fruits.forEach(myFunction);
+
+function myFunction(item, index) {
+  document.getElementById("resultado").innerHTML += item +" "; 
+}
+</script>
+</body>
+</html>
