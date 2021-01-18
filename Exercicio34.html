@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 31</title>
+<!-- (34) Agora faça um botão que ao clicar nele informa se a pessoa acertou o número.
+-->
+</head>
+<body>
+    <label>Tente acertar o numero sorteado de 1 a 10</label>
+    <input id="numero"></input>
+    <button onclick="sortearNumero()">ok</button>
+<script>
+    var y = Math.floor(Math.random() * 11);
+    function sortearNumero() {
+        var x = document.getElementById('numero').value;
+            if  (x == y) {
+                alert('voce acertou! o numero e : ' + y);
+        }
+            else if (x != y && x>=0 && x<=10) {
+                alert('voce errou :c o numero e : ' + y);
+        }
+
+        else {
+            alert('numero invalido');
+        }
+    }
+
+</script>
+</body>
+</html>
