@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 30</title>
+<!-- (30) Dentro da div com o id 'resultado', escreva os números pares até 20... (ex 2,4,6...20)
+-->
+</head>
+<body>
+    <div id="resultado"></div>
+<script>
+    var count = 0;
+    var y = '';
+    while (count <= 20)  { 
+        if(count % 2 === 0) {
+             y += count + ' ';
+        }          
+    count ++;    
+}
+document.getElementById('resultado').innerHTML = y;
+
+</script>
+</body>
+</html>
