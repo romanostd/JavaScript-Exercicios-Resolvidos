@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercicio 38</title>
+<!-- (39) Crie um campo texto no html que armazena o conteúdo em um array sempre que você 
+    clicar no botão, e apresente em uma lista(ul)
+-->
+</head>
+<body>
+    <input id ="palavras"></input>
+    <button onclick="armazenar()">Mostrar</button>
+    <p>lista de compras</p>
+<script>
+    
+    var conteudo = [];
+    var i = 0;
+    function armazenar() {
+        var input = document.getElementById('palavras').value;
+        conteudo.push(input);
+        
+        var elemento_pai = document.body;
+        var criar = document.createElement('ul');
+        var texto = document.createTextNode('conteudo');
+        criar.textContent = conteudo[i];
+        elemento_pai.appendChild(criar);
+        i++;
+}
+</script>
+</body>
+</html>
